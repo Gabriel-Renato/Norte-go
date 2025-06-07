@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="port-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos Turísticos-Viagens</title>
+    <link rel="stylesheet" href="css/fale.css" />
+    <script src="js/script.js" defer></script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      
+      <div class="logo-container">
+        
+        <img src="img/logo.png" alt="Logo do site" class="logo" />
+        <span class="site-name">NORTEGO</span>
+      </div>
+      <a href="index.html" class="home-button">Home</a>
+    </header>
+    <section class="contact-banner">
+      <h2>Fale Conosco</h2>
+      <p>Entre em contato conosco para tirar dúvidas ou planejar sua próxima aventura!</p>
+    </section>
+    <section class="contact-form">
+      <div class="container">
+        <form action="https://formspree.io/f/xnndvdbl" method="post">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu Nome"
+            autocomplete="off"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu Email"
+            autocomplete="off"
+            required
+          />
+
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+
+          <div class="button-container">
+            <button type="submit" class="enviar01">Enviar</button>
+            <button onclick="apagartexto()"><span class="Apagar01">Apagar</span></button>
+          </div>
+        </form>
+      </div>
+      
+    </section>
+    <footer id="CONTATO">
+      <div class="footer-container">
+        <h3>NORTE’GO - Agência de Turismo</h3>
+        <p>Todos os direitos reservados</p>
+        <div class="footer-info">
+          <div class="footer-section">
+            <h4>Áreas de atuação</h4>
+            <ul>
+              <li>📌 Amazônia</li>
+              <li>📌 Pará</li>
+              <li>📌 Tocantins</li>
+              <li>📌 Maranhão</li>
+              <li>📌 Acre</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Nosso compromisso</h4>
+            <p>
+              Respeito à natureza, às tradições locais e à segurança de cada
+              viagem. A NORTE’GO é pra quem busca mais que um destino — busca
+              uma conexão.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Fale com a gente!</h4>
+            <p>📲 Instagram: @nortego.turismo</p>
+            <p>📲 WhatsApp: (96) 99999-99999</p>
+            <p>📲 E-mail: contato@nortego.com.br</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NORTE’GO. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
