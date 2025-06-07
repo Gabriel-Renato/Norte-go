@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Inconsolata:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", sans-serif;
+  scroll-behavior: smooth; /* Ativa a rolagem suave */
+}
+html {
+  height: 300vh;
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header.rolagem {
+  background-color: #fff !important; /* Força a aplicação do estilo */
+  padding: 10px 4%; /* Reduz o padding para diminuir o tamanho */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona um efeito visual */
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.flex img {
+  width: 90px;
+  height: 85px;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-weight: 800;
+  transition: background 0.3s;
+  padding: 6px 6px;
+  border-radius: 10px;
+}
+header ul li a:hover {
+  background-color: rgb(0, 92, 13);
+}
+
+.btn-contatos button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: rgb(177, 108, 17);
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.banner {
+  height: 100vh;
+  background-image: url(banner.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.banner h1 {
+  font-size: 4em; /* Tamanho padrão para telas grandes */
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+.banner h1 span {
+  color: rgb(19, 51, 5); /* Destaque para o texto "Viva o inesperado" */
+}
+#destinos {
+  padding: 50px 4%;
+  background-color: #f9f9f9;
+}
+
+#destinos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  color: #666;
+  font-size: 1em;
+}
+
+#CONTATO {
+  background-color: #003300; /* Fundo verde escuro */
+  color: #fff; /* Texto branco */
+  padding: 40px 4%;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.footer-container p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Destaque para os títulos */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 0.9em;
+  color: #ccc; /* Cor mais clara para o texto do rodapé */
+}
+
+#Sobre {
+  padding: 50px 4%;
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  text-align: center;
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sobre-container h2 {
+  font-size: 2.5em;
+  color: #003300; /* Cor de destaque */
+  margin-bottom: 20px;
+}
+
+.sobre-content {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8;
+}
+
+.sobre-content p {
+  margin-bottom: 20px;
+}
+
+.sobre-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sobre-content ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #003300; /* Cor de destaque */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sobre-content ul li::before {
+  content: "✔️"; /* Ícone para cada item */
+  color: #ffcc00; /* Cor do ícone */
+  font-size: 1.2em;
+}
+
+/* Responsividade para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+  header {
+    padding: 40px 4%;
+  }
+
+  .banner h1 {
+    font-size: 3em; /* Reduz o tamanho do texto */
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 15px; /* Reduz o espaço entre os cards */
+  }
+
+  .card {
+    width: 45%; /* Ajusta a largura dos cards */
+  }
+}
+
+/* Responsividade para telas menores que 768px (smartphones grandes) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 4%;
+  }
+
+  .flex img {
+    width: 70px;
+    height: 65px;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header ul li {
+    margin: 0;
+  }
+
+  .banner h1 {
+    font-size: 2.5em; /* Ajusta o tamanho do texto para smartphones */
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Cards ocupam quase toda a largura */
+  }
+
+  .sobre-container h2 {
+    font-size: 2em; /* Reduz o tamanho do título */
+  }
+
+  .sobre-content {
+    font-size: 1em; /* Ajusta o tamanho do texto */
+  }
+}
+
+/* Responsividade para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 4%;
+  }
+
+  .banner h1 {
+    font-size: 2em; /* Reduz ainda mais o tamanho do texto */
+    padding: 0 10px; /* Adiciona padding para evitar que o texto encoste nas bordas */
+  }
+
+  .btn-contatos button {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .footer-container h3 {
+    font-size: 1.5em; /* Reduz o tamanho do texto no rodapé */
+  }
+
+  .footer-section h4 {
+    font-size: 1em; /* Ajusta o tamanho dos títulos no rodapé */
+  }
+
+  .footer-section p {
+    font-size: 0.8em; /* Ajusta o tamanho do texto no rodapé */
+  }
+}

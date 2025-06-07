@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Inconsolata:wght@200..900&display=swap");
+
+* {
+  scroll-behavior: smooth; /* Ativa a rolagem suave */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", sans-serif;
+}
+
+/* Geral */
+body {
+  font-family: "Bitter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4%;
+  background-color: #003300;
+  color: #fff;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre a logo e o texto */
+}
+
+.logo {
+  width: 50px; /* Ajuste o tamanho da logo */
+  height: auto;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #66ff66;
+  color: #003300;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact-banner {
+  position: relative;
+  background-image: url("fale.img"); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  padding: 20px 4%;
+  width: 100%;
+  height: auto; /* Ajusta a altura automaticamente */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  justify-content: center; /* Centraliza os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.contact-banner h2,
+.contact-banner p {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-banner h2 {
+  font-size: 2rem; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.contact-banner p {
+  font-size: 1rem; /* Tamanho do texto */
+  margin: 0; /* Remove margens adicionais */
+  margin-top: 10px; /* Espaçamento acima do parágrafo */
+  text-align: center; /* Centraliza o texto */
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Centraliza verticalmente */
+  background-color: #003300; /* Fundo verde escuro */
+  padding: 20px;
+  width: 50%; /* Faz o formulário ocupar toda a largura */
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+  border-radius: 20px;
+  height: 40px;
+}
+
+.contact-form .container {
+  width: 100%; /* Faz o formulário ocupar toda a largura */
+  max-width: none; /* Remove a restrição de largura máxima */
+  background-color: #fff;
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #003300;
+  margin-bottom: 15px; /* Espaçamento inferior */
+  font-size: 1.8rem; /* Tamanho da fonte */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Faz o formulário ocupar toda a largura */
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1rem; /* Tamanho da fonte */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  color: #003300;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaçamento inferior */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem; /* Tamanho da fonte */
+  width: 100%; /* Faz os campos ocuparem toda a largura */
+  height: 40px;
+}
+
+.contact-form textarea {
+  resize: none; /* Remove a opção de redimensionar */
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+  background: #1d1d2d;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+section h2 {
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin: 2.5rem;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+form label {
+  color: #f5f5f5;
+  font-size: 17px;
+  margin: 4px;
+}
+form input {
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+form input:focus {
+  border-radius: 16px;
+}
+form textarea {
+  padding: 10px;
+  outline: none;
+  border-radius: 0;
+  font-size: 15px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+form textarea:focus {
+  border-radius: 16px;
+}
+form button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  transition: all 1s;
+  margin-bottom: 20px;
+}
+form button:hover {
+  background: #f5f5f5;
+  color: black;
+  border-radius: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #003300; /* Fundo verde escuro */
+  color: #e6ffe6; /* Texto claro com tom esverdeado */
+  text-align: center;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #66ff66; /* Destaque para o título em verde claro */
+}
+
+.paragrafo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #e6ffe6; /* Texto com tom esverdeado */
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #66ff66; /* Cor do botão em verde claro */
+  color: #003300; /* Texto do botão em verde escuro */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #4caf50; /* Cor do botão ao passar o mouse em verde médio */
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.thank-you-container {
+  max-width: 600px;
+  margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem superior */
+  background-color: #fff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  text-align: center;
+}
+
+.thank-you-container .text {
+  font-size: 2rem;
+  color: #003300; /* Cor verde escuro */
+  margin-bottom: 20px;
+}
+
+.thank-you-container .paragrafo {
+  font-size: 1.2rem;
+  color: #666; /* Cor cinza */
+  margin-bottom: 30px;
+}
+
+.thank-you-container .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003300; /* Fundo verde escuro */
+  color: #fff; /* Texto branco */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you-container .btn:hover {
+  background-color: #005500; /* Fundo verde mais claro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom */
+}
+
+#CONTATO {
+  background-color: #003300; /* Fundo verde escuro */
+  color: #fff; /* Texto branco */
+  padding: 40px 4%;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.footer-container p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Destaque para os títulos */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 0.9em;
+  color: #ccc; /* Cor mais clara para o texto do rodapé */
+}
+
+.spacer {
+  height: 100px; /* Define o espaço em branco entre o texto e o rodapé */
+  background-color: #fff; /* Fundo branco */
+}
+
+footer {
+  margin-top: 0; /* Remove qualquer margem superior do rodapé */
+}
+
+/* Responsividade para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 40px; /* Reduz o tamanho da logo */
+  }
+
+  .home-button {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .contact-banner {
+    height: 150px; /* Reduz a altura do banner */
+    padding: 10px;
+  }
+
+  .contact-banner h2 {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+  }
+
+  .contact-banner p {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+  }
+
+  .contact-form .container {
+    padding: 20px; /* Reduz o padding interno */
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem; /* Reduz o tamanho dos campos */
+  }
+}
+
+/* Responsividade para telas menores que 768px (smartphones grandes) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .contact-banner {
+    height: 120px; /* Reduz ainda mais a altura do banner */
+  }
+
+  .contact-banner h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+  }
+
+  .contact-banner p {
+    font-size: 0.8rem; /* Ajusta o tamanho do texto */
+  }
+
+  .contact-form .container {
+    max-width: 90%; /* Ajusta a largura do formulário */
+  }
+
+  form input,
+  form textarea {
+    padding: 8px; /* Reduz o padding dos campos */
+  }
+
+  form button {
+    padding: 8px 12px; /* Reduz o padding do botão */
+  }
+}
+
+/* Responsividade para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 30px; /* Reduz ainda mais o tamanho da logo */
+  }
+
+  .contact-banner {
+    height: 100px; /* Ajusta a altura do banner */
+  }
+
+  .contact-banner h2 {
+    font-size: 1.2rem; /* Ajusta o tamanho do título */
+  }
+
+  .contact-banner p {
+    font-size: 0.7rem; /* Ajusta o tamanho do texto */
+  }
+
+  .contact-form .container {
+    padding: 15px; /* Reduz o padding interno */
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.8rem; /* Ajusta o tamanho dos campos */
+  }
+}
+#apagar {
+  width: 40px;
+}
+
+.Apagar01 {
+  display: inline-flex; /* Ajusta o botão para ocupar apenas o tamanho do conteúdo */
+  justify-content: center; /* Centraliza o texto dentro do botão */
+  align-items: center; /* Alinha o texto verticalmente */
+  margin: 10px auto; /* Centraliza o botão horizontalmente */
+  padding: 5px 10px; /* Ajusta o espaçamento interno */
+  background: #ff4d4d; /* Cor de fundo vermelho claro */
+  color: #fff; /* Texto branco */
+  text-decoration: none;
+  font-size: 0.8rem; /* Reduz o tamanho da fonte */
+  font-weight: bold;
+  border: 2px solid #e60000; /* Adiciona uma borda vermelha */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Apagar01:hover {
+  background: #e60000; /* Fundo vermelho mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.enviar01 {
+  display: inline-flex; /* Ajusta o botão para ocupar apenas o tamanho do conteúdo */
+  justify-content: center; /* Centraliza o texto dentro do botão */
+  align-items: center; /* Alinha o texto verticalmente */
+  margin: 10px auto; /* Centraliza o botão horizontalmente */
+  padding: 5px 10px; /* Ajusta o espaçamento interno */
+  background: #66ff66; /* Cor de fundo verde claro */
+  color: #003300; /* Texto verde escuro */
+  text-decoration: none;
+  font-size: 0.8rem; /* Reduz o tamanho da fonte */
+  font-weight: bold;
+  border: 2px solid #005500; /* Adiciona uma borda verde escuro */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.enviar01:hover {
+  background: #005500; /* Fundo verde escuro ao passar o mouse */
+  color: #fff; /* Texto branco ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.button-container {
+  display: flex; /* Define o contêiner como flexbox */
+  flex-direction: column; /* Alinha os botões verticalmente */
+  justify-content: center; /* Centraliza os botões verticalmente */
+  align-items: center; /* Centraliza os botões horizontalmente */
+  gap: 15px; /* Espaçamento entre os botões */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.enviar01,
+.Apagar01 {
+  display: inline-flex; /* Ajusta o botão para ocupar apenas o tamanho do conteúdo */
+  justify-content: center; /* Centraliza o texto dentro do botão */
+  align-items: center; /* Alinha o texto verticalmente */
+  padding: 12px 25px; /* Ajusta o espaçamento interno */
+  font-size: 1rem; /* Ajusta o tamanho da fonte */
+  font-weight: bold;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Adiciona uma sombra elegante */
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+  width: 160px; /* Define uma largura fixa para ambos os botões */
+  height: 45px; /* Define uma altura fixa para ambos os botões */
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.enviar01 {
+  background: linear-gradient(90deg, #66ff66, #33cc33); /* Gradiente verde */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove a borda */
+}
+
+.enviar01:hover {
+  background: linear-gradient(
+    90deg,
+    #33cc33,
+    #009900
+  ); /* Gradiente verde mais escuro */
+  transform: translateY(-2px); /* Eleva o botão ao passar o mouse */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Aumenta a sombra */
+}
+
+.Apagar01 {
+  background: linear-gradient(90deg, #ff4d4d, #e60000); /* Gradiente vermelho */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove a borda */
+}
+
+.Apagar01:hover {
+  background: linear-gradient(
+    90deg,
+    #e60000,
+    #b30000
+  ); /* Gradiente vermelho mais escuro */
+  transform: translateY(-2px); /* Eleva o botão ao passar o mouse */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Aumenta a sombra */
+}
