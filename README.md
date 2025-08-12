@@ -29,12 +29,6 @@ O projeto foi desenvolvido como parte do meu portfólio, focando em **design mod
 
 ---
 
-## 📸 Screenshots
-
-> *(Adicione prints do site aqui para valorizar o visual)*
-
----
-
 ## 📂 Estrutura do projeto
 
 ```plaintext
